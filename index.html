@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Braga | Treinador</title>
+  <meta name="description" content="Treinamento personalizado com Rafael Braga. Presencial e online com foco em saúde, performance e bem-estar.">
+  <meta name="keywords" content="personal trainer, consultoria fitness, Rafael Braga, treinamento, saúde, academia, treino online">
+  <meta name="author" content="Rafael Braga">
+  <link rel="icon" href="img/logo-branca.jpg" type="image/jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out both;
+    }
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-black shadow-md">
+    <img src="img/logo-branca.jpg" alt="Logo Rafael Braga" class="h-16">
+    <nav class="space-x-4">
+      <a href="#servicos" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Serviços</a>
+      <a href="#cadastro" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Cadastro</a>
+      <a href="#agendamento" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Agendamento</a>
+      <a href="#feedbacks" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Feedbacks</a>
+      <a href="#galeria" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Galeria</a>
+      <a href="#contato" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('img/banner.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <div class="text-center text-white fade-in-up fade-delay-1">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">FOCO, FORÇA E SUOR</h1>
+        <p class="text-xl">Treinamento personalizado presencial e online com Rafael Braga</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="px-6 py-12 bg-gray-800 text-center fade-in-up fade-delay-1">
+    <h2 class="text-3xl font-bold mb-4">Quem Somos</h2>
+    <p class="max-w-3xl mx-auto">Rafael Braga é treinador certificado com especialização em avaliações físicas, consultorias personalizadas e acompanhamento de resultados. Treinamento com foco em resultado, saúde e bem-estar.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="px-6 py-12 bg-gray-900 fade-in-up fade-delay-2">
+    <h2 class="text-3xl font-bold text-center mb-8">Serviços</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-cyan-800 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Avaliações Físicas</h3>
+        <p>Diagnóstico completo para identificar objetivos e necessidades.</p>
+      </div>
+      <div class="bg-cyan-800 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Consultorias Online</h3>
+        <p>Planos personalizados com acompanhamento à distância.</p>
+      </div>
+      <div class="bg-cyan-800 p-6 rounded-xl shadow-lg transition transform hover:scale-105">
+        <h3 class="text-xl font-bold mb-2">Personal Trainer</h3>
+        <p>Atendimento presencial focado em performance e resultado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cadastro -->
+  <section id="cadastro" class="px-6 py-12 bg-gray-800 fade-in-up fade-delay-2">
+    <h2 class="text-3xl font-bold text-center mb-6">Cadastro de Novos Alunos</h2>
+    <form action="https://formspree.io/f/mqaqozwq" method="POST" class="max-w-xl mx-auto grid gap-4">
+      <input type="text" name="nome" placeholder="Nome" class="p-3 rounded bg-gray-700 text-white" required>
+      <input type="email" name="email" placeholder="Email" class="p-3 rounded bg-gray-700 text-white" required>
+      <input type="tel" name="telefone" placeholder="Telefone" class="p-3 rounded bg-gray-700 text-white" required>
+      <textarea name="mensagem" placeholder="Objetivos e Observações" class="p-3 rounded bg-gray-700 text-white" required></textarea>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 rounded transition duration-300 transform hover:scale-105">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- Agendamento -->
+  <section id="agendamento" class="px-6 py-12 bg-gray-900 fade-in-up fade-delay-3">
+    <h2 class="text-3xl font-bold text-center mb-6">Agendamento Online</h2>
+    <form action="https://formspree.io/f/mqaqozwq" method="POST" class="max-w-xl mx-auto grid gap-4">
+      <input type="date" name="data" class="p-3 rounded bg-gray-700 text-white" required>
+      <input type="time" name="hora" class="p-3 rounded bg-gray-700 text-white" required>
+      <input type="text" name="nome" placeholder="Nome completo" class="p-3 rounded bg-gray-700 text-white" required>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 rounded transition duration-300 transform hover:scale-105">Agendar</button>
+    </form>
+  </section>
+
+  <!-- Feedbacks -->
+  <section id="feedbacks" class="px-6 py-12 bg-gray-800 fade-in-up fade-delay-2">
+    <h2 class="text-3xl font-bold text-center mb-6">Feedbacks de Alunos</h2>
+    <div class="space-y-4 max-w-3xl mx-auto">
+      <blockquote class="bg-gray-700 p-4 rounded">“Rafael mudou minha vida! Estou mais forte e confiante.” – João M.</blockquote>
+      <blockquote class="bg-gray-700 p-4 rounded">“A consultoria online é prática e eficiente. Super recomendo!” – Larissa T.</blockquote>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="px-6 py-12 bg-gray-800 text-center fade-in-up fade-delay-3">
+    <h2 class="text-3xl font-bold mb-6">Galeria</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <img src="img/galeria1.jpg" alt="Foto 1" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+      <img src="img/galeria2.jpg" alt="Foto 2" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+      <img src="img/galeria3.jpg" alt="Foto 3" class="rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+    </div>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section class="px-6 py-12 bg-black text-center fade-in-up fade-delay-1">
+    <h2 class="text-3xl font-bold mb-4">Siga nas Redes Sociais</h2>
+    <div class="space-x-6">
+      <a href="https://www.instagram.com/ofael_treinador" target="_blank" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">Instagram</a>
+      <a href="#" class="hover:text-yellow-400 transition duration-300 hover:scale-105 inline-block">TikTok</a>
+    </div>
+  </section>
+
+  <!-- Contato e Localização -->
+  <section id="contato" class="px-6 py-12 bg-gray-900 text-center fade-in-up fade-delay-2">
+    <h2 class="text-3xl font-bold mb-4">Contato e Localização</h2>
+    <p>Email: <a href="mailto:faelbragapersonal@gmail.com" class="text-yellow-400 hover:underline">faelbragapersonal@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5534996326370" class="text-yellow-400 hover:underline">(34) 9 9632-6370</a></p>
+    <p>Endereço:  <strong>Paracatu - MG</strong></p>
+  </section>
+
+  <footer class="text-center p-4 bg-black text-gray-500">
+    © 2025 Rafael Braga Treinador. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
